@@ -1,0 +1,121 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  /* background-color: cornsilk; */
+}
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.introduction {
+  /* color: blue; */
+  height: 40%;
+  width: 35%;
+}
+
+.box {
+  height: 30%;
+  width: 35%;
+  border: 1px solid black;
+  min-height: 350px;
+  border-radius: 20px;
+}
+
+.heading1 {
+  text-align: center;
+}
+
+.subheading1 {
+  width: 80%;
+  padding-left: 10%;
+  /* text-align: center; */
+}
+
+.radio-btn-container {
+  padding-left: 10%;
+}
+.radio-btn {
+  padding: 10px;
+  padding-left: 0px;
+}
+
+.page-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.page-btn1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.page-btn2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-left: 10%;
+  margin-top: 3%;
+  height: 20px;
+}
+.page1Cancel {
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* page 2/////////////////////////// */
+
+.input-container {
+  width: 80%;
+  padding-left: 10%;
+  margin-bottom: 100px;
+}
+
+.page2Cancel {
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn1 {
+  margin-left: 10%;
+  margin-top: 550px;
+  height: 20px;
+}
+
+/* page 3/////////////////// */
+
+.result-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.btn2 {
+  margin-left: 10%;
+  margin-top: 3%;
+  height: 20px;
+}
+
+.greybox {
+  width: 15%;
+  /* min-height: 30%; */
+  margin: 0px 40px;
+  background-color: #999;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

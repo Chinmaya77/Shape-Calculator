@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Shape Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <img src="./ShapeCalculator.png" />
+    </div>
+    <div class="container">
+      <div class="introduction">
+        <h2>Welcome to Shape Calculator</h2>
+        <p>
+          <b>
+            Shape Calculator is an interactive web application. To the right you
+            will find the 3 step application. Follow the instructions in each
+            step. Clicking cancel will take you back to step 1. Enjoy!</b
+          >
+        </p>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth.
+        </p>
+        <p>
+          Even the all-powerful Pointing has no control about the blind texts it
+          is an almost unorthographic life One day however a small line of blind
+          text by the name of Lorem Ipsum decided to leave for the far World of
+          Grammar. The Big Oxmox advised her not to do so, because there were
+          thousands of bad Commas.
+        </p>
+      </div>
+      <div class="box">
+        <h1 class="heading1" id="heading1">Step 1 : Select your shape</h1>
+        <p class="subheading1" id="subheading1">
+          Please select the shape that would like to calculate the area of and
+          press the button "Go to step 2"
+        </p>
+        <div class="radio-btn-container" id="radio-btn-container">
+          <div class="radio-btn">
+            <input type="radio" id="0" name="shape" value="Rectangle" checked />
+            <label for="rectangle">Rectangle</label>
+          </div>
+          <div class="radio-btn">
+            <input type="radio" id="1" name="shape" value="Circle" />
+            <label for="circle">Circle</label>
+          </div>
+          <div class="radio-btn">
+            <input type="radio" id="2" name="shape" value="Square" />
+            <label for="square">Square</label>
+          </div>
+          <div class="radio-btn">
+            <input type="radio" id="3" name="shape" value="Ellipse" />
+            <label for="ellipse">Ellipse</label>
+          </div>
+        </div>
+
+        <div class="input-container" id="rectangle" style="display: none">
+          <label for="rectangle">Length:</label>
+          <input type="number" name="element" id="rectanglelength" />
+          <br />
+          <br />
+          <label for="rectangle">Width :</label>
+          <input type="number" name="element" id="rectanglewidth" />
+        </div>
+        <div class="input-container" id="circle" style="display: none">
+          <label for="circle">Diameter:</label>
+          <input type="number" name="element" id="circlediameter" />
+        </div>
+        <div class="input-container" id="square" style="display: none">
+          <label for="square">Side:</label>
+          <input type="number" name="element" id="squareside" />
+        </div>
+        <div class="input-container" id="ellipse" style="display: none">
+          <label for="ellipse">Major Axis:</label>
+          <input type="number" name="element" id="ellipsemajoraxis" />
+          <br />
+          <br />
+          <label for="ellipse">Minor Axis:</label>
+          <input type="number" name="element" id="ellipseminoraxis" />
+        </div>
+
+        <h1 id="result" class="result-header" style="display: none"></h1>
+
+        <div class="page-btn">
+          <button class="btn" id="page1" onClick="goto_Step2()">
+            Go to Step 2
+          </button>
+          <div onClick="goto_Step1()" id="page1Cancel" class="page1Cancel">
+            or Cancel
+          </div>
+        </div>
+
+        <div class="page-btn">
+          <button
+            class="btn"
+            id="page2"
+            onClick="goto_Step3()"
+            style="display: none"
+          >
+            Go to Step 3
+          </button>
+          <div
+            onClick="goto_Step1()"
+            id="page2Cancel"
+            class="page2Cancel"
+            style="display: none"
+          >
+            or Cancel
+          </div>
+        </div>
+
+        <div class="page-btn">
+          <button
+            class="btn"
+            id="page3"
+            onClick="goto_Step1()"
+            style="display: none"
+          >
+            Start Over
+          </button>
+        </div>
+      </div>
+
+      <div class="greybox">
+        120 x 240 Ad<br />
+        (Vertical Banner)
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
